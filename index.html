@@ -2,116 +2,80 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Roses Don’t Remember You Back – Entrance</title>
-</head>
-<body>
-  <h1>ROSES DON’T REMEMBER YOU BACK</h1>
-  <p>Entrance to the garden.</p>
-  <a href="page1.html">Enter</a>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Frog Narrative</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Roses in the Static – Entrance</title>
   <style>
-    :root {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background: #f2f7ff;
-      color: #222;
-    }
-
     body {
+      background-color: #050013;
+      color: #fbe9f7;
+      font-family: "Georgia", serif;
       margin: 0;
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      padding: 40px;
     }
-
-    .page {
-      background: #ffffff;
-      padding: 3rem 3.5rem;
-      border-radius: 16px;
-      box-shadow: 0 18px 45px rgba(0,0,0,0.12);
-      max-width: 480px;
-      width: 90%;
-      text-align: left;
-    }
-
     h1 {
-      margin: 0 0 1rem;
-      font-size: 2rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      font-size: 26px;
     }
-
-    p {
-      margin: 0 0 2rem;
-      font-size: 1.1rem;
-      line-height: 1.6;
+    .glitch {
+      text-shadow: 2px 0 #ff77ff, -2px 0 #77aaff;
+      letter-spacing: 0.12em;
     }
-
-    .actions {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.75rem;
-      margin-bottom: 1.5rem;
-    }
-
-    .btn-link {
-      border: none;
-      background: #e0f2ff;
-      padding: 0.6rem 1.1rem;
-      border-radius: 999px;
-      cursor: pointer;
-      font-size: 0.95rem;
+    a {
+      color: #ff85c0;
       text-decoration: none;
-      color: #0b4f88;
-      transition: transform 0.1s ease, box-shadow 0.1s ease, background 0.1s ease;
     }
-
-    .btn-link:hover {
-      transform: translateY(-1px);
-      box-shadow: 0 4px 10px rgba(0,0,0,0.12);
-      background: #cfe8ff;
+    a:hover {
+      text-decoration: underline;
     }
-
-    .frog-image {
-      display: block;
+    .frame {
+      border: 1px solid #ff85c0;
+      padding: 20px;
+      max-width: 700px;
       margin: 0 auto;
-      max-width: 180px;
-      width: 60%;
-      height: auto;
-      border-radius: 12px;
-      object-fit: cover;
     }
-
-    .caption {
-      margin-top: 0.5rem;
-      font-size: 0.85rem;
-      text-align: center;
-      color: #666;
+    img {
+      max-width: 100%;
+      display: block;
+      margin: 20px auto;
+    }
+    .tiny {
+      font-size: 10px;
+      opacity: 0.8;
     }
   </style>
 </head>
 <body>
-  <main class="page">
-    <h1>The frog</h1>
-    <p>jumped.</p>
+  <div class="frame">
+    <h1 class="glitch">ROSES IN THE STATIC</h1>
 
-    <div class="actions">
-      <a href="#jump-once" class="btn-link">jump!</a>
-      <a href="#jump-twice" class="btn-link">jump! jump!</a>
-    </div>
+    <p>
+      Tonight the internet opens like a velvet curtain.
+      Somewhere between a perfume ad and a corrupted file,
+      there is a <span class="glitch">rose garden</span> made of light, pixels, and half-remembered nights.
+    </p>
 
-    <!-- Replace src with your own frog image -->
-    <img
-      src="frog.png"
-      alt="A small green frog mid-jump"
-      class="frog-image"
-    >
-    <div class="caption">Our heroic frog mid-leap.</div>
-  </main>
+    <img src="images/rose1.gif" alt="Glowing red animated rose on a dark background.">
+
+    <p>
+      You swear you’ve been here before: champagne bubbles, sequins on the floor,
+      a flash photo of you in a cracked mirror. But the page stutters.
+      Letters repeat. Time feels <span class="glitch">off by one frame</span>.
+    </p>
+
+    <p>
+      This happens: you click on a flower, and then this happens:
+      the screen fills with roses, and then this happens:
+      the memory forgets parts of you and saves over itself.
+    </p>
+
+    <p>
+      <strong>Enter the garden?</strong><br>
+      ➤ <a href="page1.html">Yes, take me to the roses</a>
+    </p>
+
+    <p class="tiny">
+      ROSES BUFFERING . . . gl1tch in th3 g4rd3n . . . glamour error: memory not found ☆
+    </p>
+  </div>
 </body>
-</html>****
+</html>
