@@ -10,3 +10,108 @@
   <a href="page1.html">Enter</a>
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Frog Narrative</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    :root {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #f2f7ff;
+      color: #222;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .page {
+      background: #ffffff;
+      padding: 3rem 3.5rem;
+      border-radius: 16px;
+      box-shadow: 0 18px 45px rgba(0,0,0,0.12);
+      max-width: 480px;
+      width: 90%;
+      text-align: left;
+    }
+
+    h1 {
+      margin: 0 0 1rem;
+      font-size: 2rem;
+    }
+
+    p {
+      margin: 0 0 2rem;
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .btn-link {
+      border: none;
+      background: #e0f2ff;
+      padding: 0.6rem 1.1rem;
+      border-radius: 999px;
+      cursor: pointer;
+      font-size: 0.95rem;
+      text-decoration: none;
+      color: #0b4f88;
+      transition: transform 0.1s ease, box-shadow 0.1s ease, background 0.1s ease;
+    }
+
+    .btn-link:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+      background: #cfe8ff;
+    }
+
+    .frog-image {
+      display: block;
+      margin: 0 auto;
+      max-width: 180px;
+      width: 60%;
+      height: auto;
+      border-radius: 12px;
+      object-fit: cover;
+    }
+
+    .caption {
+      margin-top: 0.5rem;
+      font-size: 0.85rem;
+      text-align: center;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <h1>The frog</h1>
+    <p>jumped.</p>
+
+    <div class="actions">
+      <a href="#jump-once" class="btn-link">jump!</a>
+      <a href="#jump-twice" class="btn-link">jump! jump!</a>
+    </div>
+
+    <!-- Replace src with your own frog image -->
+    <img
+      src="frog.png"
+      alt="A small green frog mid-jump"
+      class="frog-image"
+    >
+    <div class="caption">Our heroic frog mid-leap.</div>
+  </main>
+</body>
+</html>****
